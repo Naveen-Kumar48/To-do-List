@@ -6,9 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* removed CSS variables per request */
 
-/* Background */
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #6dd5ed, #2193b0);
@@ -19,7 +17,7 @@ body {
   transition: background 0.4s ease;
 }
 
-/* Main To-Do Container */
+
 .todo-container {
   width: 420px;
   background: rgba(255, 255, 255, 0.2);
@@ -40,7 +38,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* Heading */
+
 .todo-container h2 {
   text-align: left;
   font-weight: 600;
@@ -63,7 +61,7 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Input Section */
+
 .input-section {
   display: flex;
   justify-content: space-between;
@@ -103,7 +101,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Todo List */
+
 #todo-list {
   list-style: none;
   max-height: 350px;
@@ -111,7 +109,6 @@ body {
   padding-right: 4px;
 }
 
-/* Custom Scrollbar */
 #todo-list::-webkit-scrollbar {
   width: 6px;
 }
@@ -120,7 +117,7 @@ body {
   border-radius: 10px;
 }
 
-/* Individual To-Do Item */
+
 #todo-list li {
   display: flex;
   align-items: center;
@@ -139,13 +136,13 @@ body {
   transform: translateY(-2px);
 }
 
-/* Removing animation state */
+
 #todo-list li.removing {
   opacity: 0;
   transform: translateY(6px) scale(0.98);
 }
 
-/* Checkbox */
+
 #todo-list input[type="checkbox"] {
   width: 18px;
   height: 18px;
@@ -153,7 +150,6 @@ body {
   cursor: pointer;
 }
 
-/* Todo Text */
 #todo-list li span {
   flex: 1;
   margin: 0 10px;
@@ -167,7 +163,6 @@ body {
   color: #dff3ff;
 }
 
-/* Completed Todo */
 #todo-list li.completed span {
   text-decoration: line-through;
   opacity: 0.6;
@@ -190,7 +185,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Dark theme explicit overrides (no CSS variables) */
+
 html[data-theme="dark"] body {
   background: linear-gradient(135deg, #0f2027, #203a43);
 }
