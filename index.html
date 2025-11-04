@@ -8,17 +8,21 @@
   </head>
 
   <body>
-    <h1>Simple todo list</h1>
-
-    <input
-      type="text"
-      id="todo-input"
-      placeholder="Enter a todo and press Enter"
-    />
-    <button id="add-btn">Add</button>
-
-    <ul id="todo-list"></ul>
-
+    <div class="todo-container">
+      <div class="top-bar">
+        <h2>Simple To Do List</h2>
+        <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      </div>
+      <div class="input-section">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Enter a todo and press Enter"
+        />
+        <button id="add-btn">Add</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
